@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="first">
+        <div class="main">
+            <input type="text" placeholder="0" id="result">
+            <div class="keyset">
+                <div onclick="displayContent('1')" class="grid"><h1>1 </h1></div>
+                <div onclick="displayContent('2')" class="grid"><h1>2</h1></div>
+                <div onclick="displayContent('3')"  class="grid"><h1>3</h1></div>
+                <div  onclick="clr()" class="grid"><h1>AC</h1></div>
+                <div onclick="displayContent('4')"  class="grid"><h1>4</h1></div>
+                <div onclick="displayContent('5')"  class="grid"><h1>5</h1></div>
+                <div onclick="displayContent('6')"  class="grid"><h1>6</h1></div>
+                <div onclick="removeDigit()"  class="grid"><h1><i class="fa-solid fa-rectangle-xmark"></i></h1></div>
+                <div onclick="displayContent('7')"  class="grid"><h1>7</h1></div>
+                <div onclick="displayContent('8')"  class="grid"><h1>8</h1></div>
+                <div onclick="displayContent('9')"  class="grid"><h1>9</h1></div>
+                <div onclick="displayContent('-')" class="grid"><h1>-</h1></div>
+                <div onclick="displayContent('0')"  class="grid"><h1>0</h1></div>
+                <div onclick="displayContent('.')" class="grid"><h1>.</h1></div>
+                <div onclick="displayContent('/')" class="grid"><h1>/</h1></div>
+                <div onclick="displayContent('+')"   class="grid"><h1>+</h1></div>
+               
+                <div onclick="claOut()" class="grid" id="dot"><h1>=</h1></div>
+                <div  onclick="displayContent('%')" class="grid"><h1>%</h1></div>
+                <div onclick="displayContent('*')" class="grid"><h1>*</h1></div>
+                
+
+            </div>
+
+
+        </div>
+
+    </div>
+</body>
+<script src="./main.js"></script>
+
+</html>
